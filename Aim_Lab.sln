@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aim_Lab", "Aim_Lab\Aim_Lab.csproj", "{4D0D5120-7F20-40DF-BABD-D2B1FC80EB11}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ahmetyazbulursun's AimLab", "ahmetyazbulursun's AimLab\ahmetyazbulursun's AimLab.vdproj", "{2B175E7F-612A-48AE-867F-ED6ED46CBFAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D0D5120-7F20-40DF-BABD-D2B1FC80EB11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D0D5120-7F20-40DF-BABD-D2B1FC80EB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D0D5120-7F20-40DF-BABD-D2B1FC80EB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D0D5120-7F20-40DF-BABD-D2B1FC80EB11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B175E7F-612A-48AE-867F-ED6ED46CBFAB}.Debug|Any CPU.ActiveCfg = Debug
+		{2B175E7F-612A-48AE-867F-ED6ED46CBFAB}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5657A3F9-E7CE-494D-BB75-ABB9B77CFC0E}
+	EndGlobalSection
+EndGlobal
