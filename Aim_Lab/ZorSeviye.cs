@@ -91,8 +91,8 @@ namespace Aim_Lab
                 btnBasla.Enabled = true;
                 btnCikis.Visible = true;
                 btnCikis.Enabled = true;
-                btnMenuyeDon.Visible = false;
-                btnMenuyeDon.Enabled = false;
+                btnMenuyeDon.Visible = true;
+                btnMenuyeDon.Enabled = true;
 
                 lblSkor.Visible = false;
                 lblSkor.Enabled = false;
