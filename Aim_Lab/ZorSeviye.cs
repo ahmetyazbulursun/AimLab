@@ -56,18 +56,19 @@ namespace Aim_Lab
             sayac++;
             lblZaman.Text = sayac.ToString();
 
-            if (skor == 50 && sayac < 30)
+            if (lblSkor.Text == "50" && sayac < 30)
             {
                 timer1.Stop();
+
+                target.Visible = false;
+                target.Enabled = false;
+
                 MessageBox.Show("Harika! Orta Seviyeyi Başarı İle Tamamladınız. Süreniz: " + sayac, "Orta Seviye", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 btnBasla.Enabled = true;
                 btnBasla.Visible = true;
                 btnMenuyeDon.Enabled = true;
                 btnMenuyeDon.Visible = true;
-
-                target.Visible = false;
-                target.Enabled = false;
 
                 lblZaman.Visible = false;
                 lblZaman.Enabled = false;
@@ -84,9 +85,26 @@ namespace Aim_Lab
             if (sayac == 30 && skor < 50)
             {
                 timer1.Stop();
-                MessageBox.Show("Süre Doldu ve Hedef Sayıya Ulaşamadınız. Skorunuz: " + skor, "Orta Seviye", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Süre Doldu ve Hedef Sayıya Ulaşamadınız. Skorunuz: " + skor + " sn.", "Orta Seviye", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
+                btnBasla.Visible = true;
+                btnBasla.Enabled = true;
+                btnCikis.Visible = true;
+                btnCikis.Enabled = true;
+                btnMenuyeDon.Visible = false;
+                btnMenuyeDon.Enabled = false;
 
+                lblSkor.Visible = false;
+                lblSkor.Enabled = false;
+                lblZaman.Visible = false;
+                lblZaman.Enabled = false;
+                label1.Visible = false;
+                label1.Enabled = false;
+                label3.Visible = false;
+                label3.Enabled = false;
+
+                target.Visible = false;
+                target.Enabled = false;
             }
         }
 

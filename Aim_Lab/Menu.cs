@@ -56,7 +56,7 @@ namespace Aim_Lab
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bu yygulama Ahmet Hakan Eroğlu tarafından 08/03/2022 tarihinde tasarlanılmıştır. " +
+            MessageBox.Show("Bu uygulama Ahmet Hakan Eroğlu tarafından 08/03/2022 tarihinde tasarlanmıştır. " +
                 "Uygulama AimLab uygulaması ele alınarak hazırlanmıştır.", "Uygulama Hakkında", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
