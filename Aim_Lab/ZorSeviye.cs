@@ -17,7 +17,7 @@ namespace Aim_Lab
             InitializeComponent();
         }
 
-        int sayac = 0;
+        int sayac = 30;
 
         private void ZorSeviye_Load(object sender, EventArgs e)
         {
@@ -53,17 +53,17 @@ namespace Aim_Lab
             int x = konum.Next(0, 900);
             int y = konum.Next(0, 450);
 
-            sayac++;
+            sayac--;
             lblZaman.Text = sayac.ToString();
 
-            if (lblSkor.Text == "50" && sayac < 30)
+            if (lblSkor.Text == "50" && sayac > 0)
             {
                 timer1.Stop();
 
                 target.Visible = false;
                 target.Enabled = false;
 
-                MessageBox.Show("Harika! Orta Seviyeyi Başarı İle Tamamladınız. Süreniz: " + sayac, "Orta Seviye", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Harika! Zor Seviyeyi " + sayac + " saniye kala tamamladınız.", "Zor Seviye", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 btnBasla.Enabled = true;
                 btnBasla.Visible = true;
@@ -82,10 +82,10 @@ namespace Aim_Lab
 
             }
 
-            if (sayac == 30 && skor < 50)
+            if (sayac == 0 && skor < 50)
             {
                 timer1.Stop();
-                MessageBox.Show("Süre Doldu ve Hedef Sayıya Ulaşamadınız. Skorunuz: " + skor + " sn.", "Orta Seviye", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Süre Doldu ve Hedef Sayıya Ulaşamadınız. Skorunuz: " + skor, "Orta Seviye", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 btnBasla.Visible = true;
                 btnBasla.Enabled = true;
@@ -110,11 +110,11 @@ namespace Aim_Lab
 
         private void btnBasla_Click(object sender, EventArgs e)
         {
-            sayac = 0;
+            sayac = 30;
             skor = 0;
 
             lblSkor.Text = "0";
-            lblZaman.Text = "0";
+            lblZaman.Text = "30";
 
             timer1.Start();
 

@@ -59,5 +59,14 @@ namespace Aim_Lab
             MessageBox.Show("Bu uygulama Ahmet Hakan Eroğlu tarafından 08/03/2022 tarihinde tasarlanmıştır. " +
                 "Uygulama AimLab uygulaması ele alınarak hazırlanmıştır.", "Uygulama Hakkında", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sınırsız süre! İstediğiniz kadar atış yapabilirsiniz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            SerbestMod frm = new SerbestMod();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

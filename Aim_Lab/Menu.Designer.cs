@@ -38,6 +38,7 @@ namespace Aim_Lab
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +62,7 @@ namespace Aim_Lab
             this.btnEasy.FlatAppearance.BorderSize = 0;
             this.btnEasy.Font = new System.Drawing.Font("Georgia", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEasy.ForeColor = System.Drawing.Color.Black;
-            this.btnEasy.Location = new System.Drawing.Point(437, 218);
+            this.btnEasy.Location = new System.Drawing.Point(303, 221);
             this.btnEasy.Name = "btnEasy";
             this.btnEasy.Size = new System.Drawing.Size(213, 77);
             this.btnEasy.TabIndex = 6;
@@ -76,7 +77,7 @@ namespace Aim_Lab
             this.btnMedium.FlatAppearance.BorderSize = 0;
             this.btnMedium.Font = new System.Drawing.Font("Georgia", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnMedium.ForeColor = System.Drawing.Color.Black;
-            this.btnMedium.Location = new System.Drawing.Point(437, 301);
+            this.btnMedium.Location = new System.Drawing.Point(303, 304);
             this.btnMedium.Name = "btnMedium";
             this.btnMedium.Size = new System.Drawing.Size(213, 77);
             this.btnMedium.TabIndex = 7;
@@ -91,7 +92,7 @@ namespace Aim_Lab
             this.btnHard.FlatAppearance.BorderSize = 0;
             this.btnHard.Font = new System.Drawing.Font("Georgia", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnHard.ForeColor = System.Drawing.Color.Black;
-            this.btnHard.Location = new System.Drawing.Point(437, 384);
+            this.btnHard.Location = new System.Drawing.Point(303, 387);
             this.btnHard.Name = "btnHard";
             this.btnHard.Size = new System.Drawing.Size(213, 77);
             this.btnHard.TabIndex = 8;
@@ -129,11 +130,11 @@ namespace Aim_Lab
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Georgia", 25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(438, 160);
+            this.label3.Location = new System.Drawing.Point(432, 146);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(215, 39);
+            this.label3.Size = new System.Drawing.Size(227, 39);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Zorluk Seçin:";
+            this.label3.Text = "Oyun Modları";
             // 
             // pictureBox1
             // 
@@ -148,6 +149,21 @@ namespace Aim_Lab
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Aquamarine;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Font = new System.Drawing.Font("Georgia", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(594, 293);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(213, 101);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Serbest Mod";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
@@ -155,6 +171,7 @@ namespace Aim_Lab
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1047, 588);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
@@ -187,5 +204,6 @@ namespace Aim_Lab
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
